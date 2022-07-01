@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.acevedo.estudiando">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Estudiando"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".retroalimentacionEstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenesEstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RealizarExamenEstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddPreguntaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddExamenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detalleTareaEstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TareasEstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstudianteCursoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstudianteCursosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalEstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".aluhorarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".horarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotaPersonalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addNotaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detalleTareaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editTareaActivity"
+            android:exported="false" />
+        <!--
+        <activity
+            android:name=".AgregarTareaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".agregar"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".addTareaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TareasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CursoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CursosActivity"
+            android:exported="false" />
+        <!--
+ <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".PrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Fcm"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_blanco" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/black" />
+    </application>
+
+</manifest>
